@@ -4,7 +4,7 @@ def pretty_name(func_name: str, *args, **kwargs):
     func_name = func_name.replace(",", " ").capitalize()
     print(func_name, end=" ")
     for name_arg in args:
-       print(name_arg, end=" ")
+        print(name_arg, end=" ")
     print()
 
 
@@ -25,4 +25,3 @@ open_browser("chrome")
 go_to_companyname_homepage("https://qa.guru/pl/teach/control/lesson/view?id=252112288&editMode=0")
 
 find_registration_button_on_login_page("https://qa.guru/python", "Начать обучение")
-
