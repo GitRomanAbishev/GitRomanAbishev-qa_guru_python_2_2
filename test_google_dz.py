@@ -19,3 +19,4 @@ def test_bad_request(open_browser):
     browser.element('[name="q"]').type('asdddfssdf').press_enter()
     browser.element('[id="search"]').should(have.no.text('yashaka/selene: User-oriented Web UI browser tests in Python'))
     pass
+
