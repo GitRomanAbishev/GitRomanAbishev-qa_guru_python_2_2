@@ -1,11 +1,10 @@
 def pretty_name(func_name: str, *args, **kwargs):
     func_name = str(func_name)
-    if len(func_name) != 0:
-        # func_name = func_name[0].upper() + func_name[1:] Сначала сделал так, потом прочитал про метод capitalize
-        func_name = func_name.replace(",", " ").capitalize()
-        print(func_name, end=" ")
-        for name_arg in args:
-            print(name_arg, end=" ")
+    # func_name = func_name[0].upper() + func_name[1:] Сначала сделал так, потом прочитал про метод capitalize
+    func_name = func_name.replace(",", " ").capitalize()
+    print(func_name, end=" ")
+    for name_arg in args:
+       print(name_arg, end=" ")
     print()
 
 
